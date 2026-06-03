@@ -1,123 +1,215 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Descubre Chiapas</title>
+<title>Descubre Bonampak y Chiapas</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
 }
 
 body{
-    background:#f4f4f4;
-    color:#333;
+background:#fff8f0;
+color:#333;
+line-height:1.6;
 }
 
 header{
-    background:#0f766e;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86');
+background-size:cover;
+background-position:center;
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+header h1{
+font-size:4rem;
+}
+
+header p{
+font-size:1.3rem;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#ff8c42;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e56b1f;
 }
 
 nav{
-    background:#134e4a;
-    padding:15px;
-    text-align:center;
+background:#8b4513;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
 
 section{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    margin:20px 0;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+padding:70px 10%;
 }
 
 h2{
-    color:#0f766e;
-    margin-bottom:15px;
+color:#b85c38;
+margin-bottom:20px;
+font-size:2rem;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+margin-bottom:25px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
 }
 
 footer{
-    background:#134e4a;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#8b4513;
+color:white;
+text-align:center;
+padding:25px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Descubre Chiapas</h1>
-    <p>Historia, naturaleza y gastronomía en un solo lugar.</p>
+<h1>Bonampak</h1>
+<p>La joya arqueológica de la Selva Lacandona y uno de los destinos más impresionantes de Chiapas.</p>
+
+<a class="btn" href="https://maps.google.com/?q=Bonampak,Chiapas" target="_blank">
+📍 Ver ubicación en Google Maps
+</a>
 </header>
 
 <nav>
-    <a href="#bonampak">Bonampak</a>
-    <a href="#atractivos">Atractivos</a>
-    <a href="#gastronomia">Gastronomía</a>
+<a href="#historia">Historia</a>
+<a href="#atractivos">Atractivos</a>
+<a href="#gastronomia">Gastronomía</a>
+<a href="#mapa">Mapa</a>
 </nav>
 
-<section id="bonampak">
-    <div class="card">
-        <h2>Bonampak</h2>
-        <p>
-            Bonampak es una antigua ciudad maya ubicada en la Selva Lacandona.
-            Alcanzó su máximo esplendor entre los años 600 y 800 d.C. y es
-            famosa por sus impresionantes murales que muestran escenas de guerra,
-            tributos y ceremonias mayas.
-        </p>
-    </div>
+<section id="historia">
+<h2>🏛 Historia de Bonampak</h2>
+
+<div class="card">
+<p>
+Bonampak fue una importante ciudad maya ubicada en la Selva Lacandona.
+Alcanzó su máximo esplendor entre los años 600 y 800 d.C. y es famosa
+por sus extraordinarios murales que muestran escenas de ceremonias,
+guerras y la vida cotidiana de los mayas.
+</p>
+</div>
 </section>
 
 <section id="atractivos">
-    <div class="card">
-        <h2>Atractivos Turísticos</h2>
-        <ul>
-            <li>Cañón del Sumidero.</li>
-            <li>Cascadas de Agua Azul.</li>
-            <li>Palenque y su zona arqueológica.</li>
-            <li>San Cristóbal de las Casas.</li>
-            <li>Lagos de Montebello.</li>
-        </ul>
-    </div>
+<h2>🌿 Atractivos Turísticos</h2>
+
+<div class="card">
+<ul>
+<li>Bonampak y sus murales mayas.</li>
+<li>Selva Lacandona.</li>
+<li>Cañón del Sumidero.</li>
+<li>Cascadas de Agua Azul.</li>
+<li>Palenque.</li>
+<li>San Cristóbal de las Casas.</li>
+<li>Lagos de Montebello.</li>
+</ul>
+</div>
+
+<div class="galeria">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Bonampak.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Cascadas_de_Agua_Azul.jpg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Canon_del_Sumidero.jpg">
+
+</div>
 </section>
 
 <section id="gastronomia">
-    <div class="card">
-        <h2>Gastronomía Chiapaneca</h2>
-        <p>
-            Chiapas destaca por su riqueza culinaria. Entre los platillos y
-            productos más representativos se encuentran el asado coleto,
-            el cochito horneado, el pan compuesto, el chocolate artesanal
-            y el reconocido café de altura.
-        </p>
-    </div>
+<h2>🍫 Gastronomía Chiapaneca</h2>
+
+<div class="card">
+<p>
+La cocina chiapaneca destaca por su riqueza cultural y sabores únicos.
+Entre los platillos más representativos se encuentran el cochito
+horneado, el asado coleto, el pan compuesto y bebidas elaboradas con
+cacao. Además, Chiapas es reconocido internacionalmente por su café de
+altura.
+</p>
+</div>
+</section>
+
+<section id="mapa">
+<h2>📍 Ubicación</h2>
+
+<div class="card">
+<p>
+Bonampak se encuentra en la Selva Lacandona, al este del estado de Chiapas.
+</p>
+
+<a class="btn"
+href="https://www.google.com/maps/place/Bonampak/"
+target="_blank">
+Abrir Google Maps </a>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 - Turismo en Chiapas</p>
+<h3>Descubre la magia de Chiapas</h3>
+<p>Proyecto turístico sobre Bonampak y los principales atractivos del estado.</p>
 </footer>
 
 </body>
